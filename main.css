@@ -363,14 +363,18 @@ section {
     border-color 0.3s;
 }
 
+.relation {
+  padding: 20px;
+}
+
 .family-card:hover {
   transform: translateY(-6px);
   border-color: var(--accent);
 }
 
 .family-avatar {
-  width: 70px;
-  height: 70px;
+  width: 170px;
+  height: 170px;
   border-radius: 50%;
   background: linear-gradient(135deg, var(--accent), var(--accent2));
   display: flex;
@@ -389,6 +393,14 @@ section {
   font-family: "Syne", sans-serif;
   font-weight: 700;
   margin-bottom: 0.3rem;
+}
+
+.family-img {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
 }
 
 .family-card .relation {
@@ -423,6 +435,12 @@ section {
   transition:
     transform 0.3s,
     border-color 0.3s;
+  height: 300px;
+}
+
+.mate-img {
+  width: 100%;
+  border-radius: 50%;
 }
 
 .mate-card:hover {
